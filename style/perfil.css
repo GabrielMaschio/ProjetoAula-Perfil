@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Titillium+Web&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Outfit;
+}
+
+body {
+    display: flex;
+    background-color: hsl(212, 45%, 89%);
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 1px 1px 5px rgba(2, 3, 66, 0.5);
+    border-radius: 15px;
+    background-color: RGB(238, 243, 248);
+    padding: 20px;
+    width: 650px;
+    height: 720px;
+}
+
+header {
+    box-sizing: border-box;
+    width: 580px;
+    border-bottom: 2px #606060 solid;
+}
+
+header h1 {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(218, 44%, 22%);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imagem img {
+    border-radius: 1000px;
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    border: 5px rgba(146, 146, 146, 0.5) solid;
+}
+
+.nome {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 3px;
+    color: hsl(218, 44%, 22%);
+    border-bottom: 2px #606060 solid;
+}
+
+.texto {
+    text-align: center;
+    width: 400px;
+    color:  hsl(220, 14%, 43%);
+}
+
+/* Formatação das Tecnologias */
+.icon-stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(218, 44%, 22%);
+}
+
+.icon-stack h2 {
+    border-bottom: 2px #606060 solid;
+}
+
+.icon ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.icon ul li {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.icon ul li img{
+    margin-top: 5px;
+    padding: 10px;
+    width: 50px;
+    transition: transform .3s ease;
+}
+
+.icon ul li div img:hover {
+    transform: scale(1.2);
+}
+
+.github img:hover {
+    cursor: pointer;
+}
+
+.icon ul li div:hover::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    content: attr(data);
+    position: relative;
+    color: var(--color-white);
+}
