@@ -25,7 +25,7 @@ body {
     background-color: RGB(238, 243, 248);
     padding: 20px;
     width: 650px;
-    height: 720px;
+    height: 850px;
 }
 
 header {
@@ -40,6 +40,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     color: hsl(218, 44%, 22%);
+    text-transform: uppercase;
 }
 
 section {
@@ -47,6 +48,10 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+section h2 {
+    text-transform: uppercase;
 }
 
 .imagem img {
@@ -89,7 +94,7 @@ section {
 .icon ul {
     display: flex;
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .icon ul li {
@@ -120,4 +125,40 @@ section {
     content: attr(data);
     position: relative;
     color: var(--color-white);
+}
+
+/* Formatação Redes Sociais */
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(218, 44%, 22%);
+}
+
+.social-media h2 {
+    border-bottom: 2px #606060 solid;
+}
+
+.redes ul {
+    display: flex;
+    list-style: none;
+}
+
+.redes ul li {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.redes ul li img{
+    margin-top: 5px;
+    padding: 10px;
+    width: 50px;
+    transition: transform .3s ease;
+}
+
+.redes ul li div img:hover {
+    transform: scale(1.2);
 }
